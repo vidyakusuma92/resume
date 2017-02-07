@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  nav.navbar.navbar-inverse.navbar-fixed-top
+    .container
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navMain')
+          span.sr-only Toggle Navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+      #navMain.collapse.navbar-collapse
+        ul.nav.navbar-nav.pull-right
+          li.active
+            a(href='#') HOME
+          li
+            a(href='#') ABOUT ME
+          li
+            a(href='#') SKILLS
+          li
+            a(href='#') PORTFOLIO
+          li
+            a(href='#') CONTACT ME
+  .jumbotron
+    .container
+      .row
+        
+  h1= title
+  p Welcome to #{title}
