@@ -5,9 +5,11 @@ body {
 a {
   color: #00B7FF;
 }
-
+.nav-styles{
+    color: #DCDCDC !important;
+}
 .navbar-inverse{
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0,0,0,0.4);
   background-image:none;
   border-bottom: 0px;
 }
@@ -18,9 +20,15 @@ a {
 
 .parallax-window-second{
     min-height: 400px;
+    height: 100%;
     background: transparent;
 }
 
+@media only screen and (max-width: 992px) {
+    .parallax-window-second{
+        min-height: 800px;
+    }
+}
 
 .layer {
     background-color: rgba(200, 150, 300, 0.3);
@@ -41,18 +49,31 @@ a {
   border-radius: 10px;
 }
 .img-circle{
-  left: 30%;
-  bottom: 10.5em;
-  width: 240px;
-  height: 240px;
-  position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: 160px;
+    width: 160px;
+}
+
+.push-image-up{
+    top: -8em;
 }
 
 .iconize{
   width: 140px;
   height: 140px;
-  top: 60px;
-  margin: 20px;
+  top: 0;
+  margin: 2em;
+  position: inherit;
+  bottom: 0;
+  left: 3em;
+  right: 0;
+}
+
+.iconize-margin{
+    margin-top: 14em;
 }
 
 .typed-cursor{
@@ -79,10 +100,11 @@ a {
 .style{
   text-align: center;
   overflow: hidden;
-  margin-top: -2.3em;
+  margin-top: 2em;
   font-size: 3em;
   font-weight: 400;
   color: lightgrey;
+  position: relative;
 }
 
 .jumbotron {
@@ -91,6 +113,7 @@ a {
     background-position: 0% 25%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #FFD5BF;
 }
 .jumbotron-style{
   text-shadow: black 0em 0em 0em;

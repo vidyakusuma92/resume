@@ -2,7 +2,7 @@ extends layout
 
 block content
   nav.navbar.navbar-inverse.navbar-fixed-top
-    .container
+    .container-fluid
       .navbar-header
         button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navMain')
           span.sr-only Toggle Navigation
@@ -12,63 +12,61 @@ block content
       #navMain.collapse.navbar-collapse
         ul.nav.navbar-nav.pull-right
           li.active
-            a(href='#') HOME
+            a.nav-styles(href='#') HOME
           li
-            a(href='#') ABOUT ME
+            a.nav-styles(href='#about-me') ABOUT ME
           li
-            a(href='#') SKILLS
+            a.nav-styles(href='#skills') SKILLS
           li
-            a(href='#') PORTFOLIO
+            a.nav-styles(href='#portfolio') PORTFOLIO
           li
-            a(href='#') CONTACT ME
+            a.nav-styles(href='#contact-me') CONTACT ME
             
   .parallax-window(data-parallax='scroll', data-image-src='https://static.pexels.com/photos/5770/leaf-spring-leaves-plants.jpg')
     .layer
-      .row
-        .col-lg-4
-        .col-lg-4
-          .blur-box
-            .row
-              .col-lg-12.col-xs-12
-                img.img-circle(src='https://yt3.ggpht.com/-UjKrETVeMGA/AAAAAAAAAAI/AAAAAAAAAAA/6c3AY-EYwZI/s900-c-k-no-mo-rj-c0xffffff/photo.jpg', alt='myimage')
-                .element.style
-        .col-lg-4
-  .jumbotron
+      .container  
+        .row
+            .col-lg-4
+            .col-lg-4
+              .blur-box
+                .row
+                  .col-lg-12.col-xs-12
+                    img.img-circle.push-image-up(src='https://yt3.ggpht.com/-UjKrETVeMGA/AAAAAAAAAAI/AAAAAAAAAAA/6c3AY-EYwZI/s900-c-k-no-mo-rj-c0xffffff/photo.jpg', alt='myimage')
+                    .style
+                        span.element
+            .col-lg-4
+  .jumbotron(id='about-me')
     .jumbotron-style
       = "I am a Frontend developer based in Banglore. I love anything that says design,"
       br
       = " I make arts and crafts and also take an occational photo or two."
-      
-  .row
-    .col-lg-12
-      .parallax-window-second(data-parallax='scroll', data-image-src='https://static.pexels.com/photos/6088/wood-forest-fire-fireplace.jpg')
-        .parallax-style
-          .row
-            .col-lg-3
+  .container-fluid
+      .row(id='skills')
+        .parallax-window-second(data-parallax='scroll', data-image-src='https://static.pexels.com/photos/6088/wood-forest-fire-fireplace.jpg')
+            .col-lg-3.col-md-3.col-sm-6.col-xs-6
               img.img-circle.iconize(src='https://secure.gravatar.com/avatar/6e1b5ab3ef1593413f1bee4e5a6e6ae7?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png')
-            .col-lg-3
+            .col-lg-3.col-md-3.col-sm-6.col-xs-6
               img.img-circle.iconize(src='https://secure.gravatar.com/avatar/6e1b5ab3ef1593413f1bee4e5a6e6ae7?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png')
-            .col-lg-3
+            .col-lg-3.col-md-3.col-sm-6.col-xs-6
               img.img-circle.iconize(src='https://secure.gravatar.com/avatar/6e1b5ab3ef1593413f1bee4e5a6e6ae7?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png')
-            .col-lg-3
+            .col-lg-3.col-md-3.col-sm-6.col-xs-6
               img.img-circle.iconize(src='https://secure.gravatar.com/avatar/6e1b5ab3ef1593413f1bee4e5a6e6ae7?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png')
-          .row
-            .col-lg-3
+            .col-lg-3.col-md-3.col-sm-6.col-xs-6
               img.img-circle.iconize(src='https://secure.gravatar.com/avatar/6e1b5ab3ef1593413f1bee4e5a6e6ae7?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png')
-            .col-lg-3
+            .col-lg-3.col-md-3.col-sm-6.col-xs-6
               img.img-circle.iconize(src='https://secure.gravatar.com/avatar/6e1b5ab3ef1593413f1bee4e5a6e6ae7?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png')
-            .col-lg-3
+            .col-lg-3.col-md-3.col-sm-6.col-xs-6
               img.img-circle.iconize(src='https://secure.gravatar.com/avatar/6e1b5ab3ef1593413f1bee4e5a6e6ae7?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png')
-            .col-lg-3
+            .col-lg-3.col-md-3.col-sm-6.col-xs-6
               img.img-circle.iconize(src='https://secure.gravatar.com/avatar/6e1b5ab3ef1593413f1bee4e5a6e6ae7?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png')
-                
-  .row.addpad
-    .col-lg-6
-    .col-lg-6
-      .pull-left.right-side
-        h1 "Pari ma I love youuuuuuu"
-  .row
-    .col-lg-6
-      .pull-right.left-side
-        h1 "Chinnu ma I love youuuuuuu"
-    .col-lg-6
+  .container            
+      .row.addpad(id='portfolio')
+        .col-lg-6
+        .col-lg-6
+          .pull-left.right-side
+            h1 "Pari ma I love youuuuuuu"
+      .row
+        .col-lg-6
+          .pull-right.left-side
+            h1 "Chinnu ma I love youuuuuuu"
+        .col-lg-6
