@@ -4,13 +4,13 @@ $('.parallax-window-second').parallax({imageSrc: ''});
 $('.parallax-window-third').parallax({imageSrc: 'https://static.pexels.com/photos/6675/flight-mountains-sky-flying.jpeg'});
 $(function(){
         $(".element").typed({
-            strings: ["Frontend Developer.", "Vidya Kusuma"],
+            strings: ["Hi, I'm Vidya", "I love arts and design", "I develop frontend", "I am a creative", "Hi, I'm Vidya"],
             typeSpeed: 50,
             cursorChar: "|",
             loop: false,
             loopcount: false,
             showCursor: true,
-            backDelay: 4000
+            backDelay: 2000
 
         });
     });
