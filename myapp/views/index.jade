@@ -21,10 +21,10 @@ block content
             a.nav-styles(href='#portfolio') PORTFOLIO
           li
             a.nav-styles(href='#contact-me') CONTACT ME
-            
+
   .parallax-window(id="home" data-parallax='scroll', data-image-src='https://static.pexels.com/photos/5770/leaf-spring-leaves-plants.jpg')
     .layer
-      .container  
+      .container
         .row
             .col-lg-4
             .col-lg-4
@@ -59,14 +59,41 @@ block content
               img.img-circle.iconize(src='https://secure.gravatar.com/avatar/6e1b5ab3ef1593413f1bee4e5a6e6ae7?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png')
             .col-lg-3.col-md-3.col-sm-6.col-xs-6
               img.img-circle.iconize(src='https://secure.gravatar.com/avatar/6e1b5ab3ef1593413f1bee4e5a6e6ae7?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png')
-  .container            
+  .container
       .row.addpad(id='portfolio')
-        .col-lg-6
-        .col-lg-6
+        .col-lg-6.col-md-6.col-sm-6.col-xs-6
+        .col-lg-6.col-md-6.col-sm-6.col-xs-6
           .pull-left.right-side
-            h1 "Pari ma I love youuuuuuu"
+            .floating-dot-left
+            h3 Portfolio Item 1
+            p
+            = "Lorem ipsum dolor sit amet, eos admodum eligendi ne, quo cibo modus noluisse et. Vix ferri vivendo consequuntur ex. Te quas vidit sed, quo mucius noster luptatum ad. Accumsan dissentias ad duo, legimus sententiae eos at."
       .row
-        .col-lg-6
+        .col-lg-6.col-md-6.col-sm-6.col-xs-6
           .pull-right.left-side
-            h1 "Chinnu ma I love youuuuuuu"
-        .col-lg-6
+            .floating-dot-right
+            h3.text-right Portfolio Item 2
+            p
+            = "Ad movet causae referrentur cum, appetere convenire et his. Eam tantas probatus ea, per ei consul persius adipiscing, quo tation docendi reprehendunt ne. Est tibique prodesset mnesarchum cu, mei quas possit et. Discere commune mel ex, ullum vitae at pro, eripuit propriae ea est. Quem aliquip quo ea, omnesque accusata per in."
+        .col-lg-6.col-md-6.col-sm-6.col-xs-6
+      .row
+        .col-lg-6.col-md-6.col-sm-6.col-xs-6
+        .col-lg-6.col-md-6.col-sm-6.col-xs-6
+          .pull-left.right-side
+            .floating-dot-left
+            h3 Portfolio Item 3
+            p
+            = "In ius amet augue minimum, ei eos suscipit intellegat, an per doctus reprimique. Mei eleifend qualisque ocurreret cu. Mel volutpat praesent et, scripserit scribentur ei sed, mea putant aliquando dissentiunt cu. Mei no ubique phaedrum, at urbanitas temporibus his."
+      .row
+        .col-lg-6.col-md-6.col-sm-6.col-xs-6
+          .pull-right.left-side
+            .floating-dot-right
+            h3.text-right Portfolio Item 4
+            p
+            = "Pro te ipsum persequeris, congue tantas iisque ut qui, veniam fabellas ne vel. Vel ea facete temporibus. Id ius deleniti convenire, pro at agam ignota sententiae, ne veri posidonium sit. Eum oporteat suscipiantur interpretaris at, ei mea mundi percipit. Facete explicari pro an, nec te inermis tincidunt."
+        .col-lg-6.col-md-6.col-sm-6.col-xs-6
+  .container-fluid
+      .row.contact-section(id='contact-me')
+        .col-lg-4
+        .col-lg-4
+        .col-lg-4

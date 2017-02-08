@@ -132,7 +132,6 @@ a {
   border-left: 1px solid black;
   padding-left: 20px;
   margin-left: -15px;
-
 }
 
 .left-side{
@@ -142,4 +141,33 @@ a {
 }
 .addpad{
   padding-top: 30px;
+}
+
+.floating-dot-left{
+  height: 1em;
+  width: 1em;
+  border-radius: 2em;
+  border: none;
+  background-color: black;
+  float: left;
+  margin-left: -27px;
+}
+
+.floating-dot-right{
+  height: 1em;
+  width: 1em;
+  border-radius: 2em;
+  border: none;
+  background-color: black;
+  float: right;
+  margin-right: -27px;
+}
+
+.contact-section{
+  height: 30em;
+  background-color: #57CEAF;
+}
+
+.text-right{
+  text-align: right;
 }
