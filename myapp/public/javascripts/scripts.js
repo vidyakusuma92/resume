@@ -1,6 +1,7 @@
 //$('.parallax-window').parallax({imageSrc: 'https://static.pexels.com/photos/5770/leaf-spring-leaves-plants.jpg'});
-$('.parallax-window').parallax({imageSrc: 'http://localhost:3000/images/mountain.jpg'});
-$('.parallax-window-second').parallax({imageSrc: 'https://static.pexels.com/photos/6088/wood-forest-fire-fireplace.jpg'});
+$('.parallax-window').parallax({imageSrc: 'https://static.pexels.com/photos/26920/pexels-photo.jpg'});
+$('.parallax-window-second').parallax({imageSrc: ''});
+$('.parallax-window-third').parallax({imageSrc: 'https://static.pexels.com/photos/6675/flight-mountains-sky-flying.jpeg'});
 $(function(){
         $(".element").typed({
             strings: ["Frontend Developer.", "Vidya Kusuma"],
