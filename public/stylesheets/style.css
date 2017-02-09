@@ -8,6 +8,10 @@ a {
 .nav-styles{
     color: #DCDCDC !important;
 }
+a:hover {
+  color: black;
+
+}
 .navbar-inverse{
   background-color: rgba(0,0,0,0.4);
   background-image:none;
@@ -210,4 +214,10 @@ a {
 .paddingremove{
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.underline{
+  width: 65px;
+  height: 5px;
+  background-color: black;
 }
