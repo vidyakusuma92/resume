@@ -1,0 +1,106 @@
+extends layout
+
+block content
+  nav.navbar.navbar-inverse.navbar-fixed-top
+    .container-fluid
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navMain')
+          span.sr-only Toggle Navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+      #navMain.collapse.navbar-collapse
+        ul.nav.navbar-nav.pull-right
+          li.active
+            a.nav-styles(href='#home') HOME
+          li
+            a.nav-styles(href='#about-me') ABOUT ME
+          li
+            a.nav-styles(href='#skills') SKILLS
+          li
+            a.nav-styles(href='#portfolio') PORTFOLIO
+          li
+            a.nav-styles(href='#contact-me') CONTACT ME
+
+  .parallax-window(id="home" data-parallax='scroll', data-image-src='https://static.pexels.com/photos/26920/pexels-photo.jpg')
+    .layer
+      .container
+        .row
+            .col-lg-4
+            .col-lg-4
+              .blur-box
+                .row
+                  .col-lg-12.col-xs-12
+                    img.img-circle.push-image-up(src='https://yt3.ggpht.com/-UjKrETVeMGA/AAAAAAAAAAI/AAAAAAAAAAA/6c3AY-EYwZI/s900-c-k-no-mo-rj-c0xffffff/photo.jpg', alt='myimage')
+                    .style
+                        span.element
+            .col-lg-4
+  .jumbotron(id='about-me')
+    .jumbotron-style
+      = "I am a Frontend developer based in Banglore. I love anything that says design,"
+      br
+      = " I make arts and crafts and also take an occational photo or two."
+  .container-fluid
+      .row(id='skills')
+        .parallax-window-second(data-parallax='scroll', data-image-src='https://static.pexels.com/photos/139306/pexels-photo-139306.jpeg')
+            .col-lg-3.col-md-3.col-sm-6.col-xs-6
+              img.iconize(src='http://localhost:3000/images/angularjs.png')
+            .col-lg-3.col-md-3.col-sm-6.col-xs-6
+              img.iconize(src='http://localhost:3000/images/css3.png')
+            .col-lg-3.col-md-3.col-sm-6.col-xs-6
+              img.iconize(src='http://localhost:3000/images/bootstrap.png')
+            .col-lg-3.col-md-3.col-sm-6.col-xs-6
+              img.iconize(src='http://localhost:3000/images/jquery.png')
+            .col-lg-3.col-md-3.col-sm-6.col-xs-6
+              img.iconize(src='http://localhost:3000/images/html5.png')
+            .col-lg-3.col-md-3.col-sm-6.col-xs-6
+              img.iconize(src='http://localhost:3000/images/nodejs.png')
+            .col-lg-3.col-md-3.col-sm-6.col-xs-6
+              img.iconize(src='http://localhost:3000/images/mongodb.png')
+            .col-lg-3.col-md-3.col-sm-6.col-xs-6
+              img.iconize(src='http://localhost:3000/images/github.png')
+  .parallax-window-third(id="home" data-parallax='scroll', data-image-src='https://static.pexels.com/photos/213703/pexels-photo-213703.jpeg')  
+    .container.portfolio
+        .row.addpad(id='portfolio')
+          .col-lg-6.col-md-6.col-sm-6.col-xs-6
+          .col-lg-6.col-md-6.col-sm-6.col-xs-6
+            .pull-left.right-side
+              .floating-dot-left
+              h3 Portfolio Item 1
+              p
+              = "Lorem ipsum dolor sit amet, eos admodum eligendi ne, quo cibo modus noluisse et. Vix ferri vivendo consequuntur ex. Te quas vidit sed, quo mucius noster luptatum ad. Accumsan dissentias ad duo, legimus sententiae eos at."
+        .row
+          .col-lg-6.col-md-6.col-sm-6.col-xs-6
+            .pull-right.left-side
+              .floating-dot-right
+              h3.text-right Portfolio Item 2
+              p
+              = "Ad movet causae referrentur cum, appetere convenire et his. Eam tantas probatus ea, per ei consul persius adipiscing, quo tation docendi reprehendunt ne. Est tibique prodesset mnesarchum cu, mei quas possit et. Discere commune mel ex, ullum vitae at pro, eripuit propriae ea est. Quem aliquip quo ea, omnesque accusata per in."
+          .col-lg-6.col-md-6.col-sm-6.col-xs-6
+        .row
+          .col-lg-6.col-md-6.col-sm-6.col-xs-6
+          .col-lg-6.col-md-6.col-sm-6.col-xs-6
+            .pull-left.right-side
+              .floating-dot-left
+              h3 Portfolio Item 3
+              p
+              = "In ius amet augue minimum, ei eos suscipit intellegat, an per doctus reprimique. Mei eleifend qualisque ocurreret cu. Mel volutpat praesent et, scripserit scribentur ei sed, mea putant aliquando dissentiunt cu. Mei no ubique phaedrum, at urbanitas temporibus his."
+        .row
+          .col-lg-6.col-md-6.col-sm-6.col-xs-6
+            .pull-right.left-side
+              .floating-dot-right
+              h3.text-right Portfolio Item 4
+              p
+              = "Pro te ipsum persequeris, congue tantas iisque ut qui, veniam fabellas ne vel. Vel ea facete temporibus. Id ius deleniti convenire, pro at agam ignota sententiae, ne veri posidonium sit. Eum oporteat suscipiantur interpretaris at, ei mea mundi percipit. Facete explicari pro an, nec te inermis tincidunt."
+          .col-lg-6.col-md-6.col-sm-6.col-xs-6
+  .container-fluid
+      .row.contact-section(id='contact-me')
+        .col-lg-6.col-md-6.col-sm-12.col-xs-12.paddingremove
+          .leftycontact
+        .col-lg-6.col-md-6.col-sm-12.col-xs-12.paddingremove 
+          .rightycontact
+  .container-fluid.footer
+    .row
+      .col-lg-4.col-md-4.col-sm-6.col-xs-6
+      .col-lg-4.col-md-4.col-sm-6.col-xs-6
+      .col-lg-4.col-md-4.col-sm-6.col-xs-6
