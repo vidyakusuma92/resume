@@ -293,3 +293,7 @@ input[type=textarea]{
   background-color: white;
   margin-left: 152px;
 }
+
+body{
+  position: relative;
+}

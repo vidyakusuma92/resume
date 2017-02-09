@@ -20,3 +20,4 @@ $('a').click(function(){
     }, 1000);
     return false;
 });
+$('body').scrollspy({ target: '#navMain' })
