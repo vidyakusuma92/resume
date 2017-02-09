@@ -100,13 +100,31 @@ block content
         .col-lg-6.col-md-6.col-sm-12.col-xs-12.paddingremove 
           .rightycontact
             .row
-              .col-lg-11.col-lg-offset-1
-                h1 CONTACT ME
+              .col-lg-11.col-lg-offset-1.col-md-11.col-md-offset-1.col-sm-5.col-sm-offset-1.col-xs-6.col-xs-offset-1
+                h1.contact-me CONTACT ME
             .row
-              .col-lg-11.col-lg-offset-1
-                .underline
+              .col-lg-11.col-lg-offset-1.col-md-11.col-md-offset-1.col-sm-5.col-sm-offset-1.col-xs-6.col-xs-offset-1
+                .underline.contact-me
             .row
-              
+              .col-lg-11.col-lg-offset-1.col-md-11.col-md-offset-1.col-sm-5.col-sm-offset-1.col-xs-6.col-xs-offset-1
+                form.form-horizontal
+                  .formgroup
+                    .col-lg-4.col-md-4.col-xs-12.col-sm-12
+                      input#firstname.input-style(type='text', name='firstname',placeholder='Firstname')
+                    .col-lg-4.col-md-4.col-xs-12.col-sm-12
+                      input#lastname.input-style(type='text', name='email',placeholder='Email')
+                    .col-lg-4
+                  .formgroup
+                    .col-lg-12.col-md-12.col-xs-12.col-sm-12
+                      input#subject.input-style-subject(type='text', name='subject',placeholder='Subject')
+                  //.col-lg-12
+                    //h5.textmsg-style Message
+                  .formgroup
+                    .col-lg-12.col-md-12.col-xs-12.col-sm-12
+                      input#subject.input-style-subject(type='textarea', name='message',placeholder='Message')
+                .col-lg-12
+                  button.send-button(type='button', onclick='') Send
+                      
   .container-fluid.footer
     .row
       .col-lg-4.col-md-4.col-sm-6.col-xs-6

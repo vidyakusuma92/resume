@@ -221,3 +221,58 @@ a:hover {
   height: 5px;
   background-color: black;
 }
+
+.input-style{
+  background-color: tranperant;
+  border-bottom: 5px;
+  width: 200px;
+  height: 35px;
+  margin-top: 30px;
+  outline: none;
+  outline-style: none;
+}
+.input-style-subject{
+  background-color: tranperant;
+  border-bottom: 5px;
+  width: 465px;
+  height: 35px;
+  margin-top: 30px;
+  outline: none;
+  outline-style: none;
+}
+input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 17px;
+}
+.contact-me{
+  margin-left: 13px;
+}
+.messagestyle{
+  margin-top: 65px;
+
+}
+.textmsg-style{
+  font-size: 17px;
+  color: #a7a4a4;
+  margin-top: 30px;
+}
+input[type=textarea]{
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 17px;
+  margin-top: 65px;
+}
+.send-button{
+  margin-top: 35px;
+  position: relative;
+  margin-left: 169px;
+  width: 100px;
+  height: 29px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 2px solid black;
+  color: black;
+}
