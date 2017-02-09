@@ -1,7 +1,7 @@
 //$('.parallax-window').parallax({imageSrc: 'https://static.pexels.com/photos/5770/leaf-spring-leaves-plants.jpg'});
-$('.parallax-window').parallax({imageSrc: 'https://static.pexels.com/photos/26920/pexels-photo.jpg'});
+$('.parallax-window').parallax({imageSrc: 'http://localhost:3000/images/parallax-one.jpg'});
 $('.parallax-window-second').parallax({imageSrc: ''});
-$('.parallax-window-third').parallax({imageSrc: 'https://static.pexels.com/photos/6675/flight-mountains-sky-flying.jpeg'});
+$('.parallax-window-third').parallax({imageSrc: 'http://localhost:3000/images/parallax-two.jpg'});
 $(function(){
         $(".element").typed({
             strings: ["Hi, I'm Vidya", "I love arts and design", "I develop frontend", "I am a creative", "Hi, I'm Vidya"],
