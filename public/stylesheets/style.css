@@ -276,3 +276,13 @@ input[type=textarea]{
   border: 2px solid black;
   color: black;
 }
+.quickid{
+  color: white;
+  margin-left: 165px;
+}
+.underline-black{
+  width: 55px;
+  height: 5px;
+  background-color: white;
+  margin-left: 152px;
+}
