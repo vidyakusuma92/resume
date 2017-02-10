@@ -1,5 +1,5 @@
 //$('.parallax-window').parallax({imageSrc: 'https://static.pexels.com/photos/5770/leaf-spring-leaves-plants.jpg'});
-$('.parallax-window').parallax({imageSrc: '/images/parallax-one.jpg'});
+$('.parallax-window').parallax({imageSrc: '/images/pexels.jpg'});
 $('.parallax-window-second').parallax({imageSrc: ''});
 $('.parallax-window-third').parallax({imageSrc: '/images/parallax-two.jpg'});
 $(function(){

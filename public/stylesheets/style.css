@@ -76,6 +76,7 @@ a:hover {
     position: absolute;
     height: 160px;
     width: 160px;
+    object-fit: cover;
 }
 
 .push-image-up{
