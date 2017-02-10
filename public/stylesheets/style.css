@@ -260,6 +260,7 @@ input[type=text] {
 }
 .contact-me{
   margin-left: 13px;
+  color: black;
 }
 .messagestyle{
   margin-top: 65px;
@@ -275,7 +276,7 @@ input[type=textarea]{
   border: none;
   border-bottom: 2px solid black;
   font-size: 17px;
-  margin-top: 65px;
+  margin-top: 45px;
 }
 .send-button{
   margin-top: 35px;
@@ -285,18 +286,19 @@ input[type=textarea]{
   height: 29px;
   border-radius: 5px;
   background-color: transparent;
-  border: 2px solid black;
   color: black;
+  top: 20px;
+  font-size: 20px;
 }
 .quickid{
   color: white;
-  margin-left: 165px;
+  margin-left: 60px;
 }
 .underline-black{
   width: 55px;
   height: 5px;
   background-color: white;
-  margin-left: 152px;
+  margin-left: 77px;
 }
 
 body{
@@ -318,7 +320,37 @@ body{
     margin-right: 10px;
     margin-left: 10px;
 }
+.white{
+  color: white;
+}
 
 .portfolio h3{
     color: black;
+}
+.quick{
+    padding-left: 77px;
+}
+
+.textcolor{
+  color: black;
+}
+.view-resume{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.resume-btn{
+  border: 2px solid black;
+  color: black;
+  margin: auto;
+  position: relative;
+  width: 11em;
+  height: 37px;
+  font-size: 15px;
+  text-align: center;
+}
+.extend{
+  min-height: 215px;
 }
