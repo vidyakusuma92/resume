@@ -305,3 +305,19 @@ body{
 .active{
     border: 1px solid white;
 }
+
+.portfolio-badge{
+    font-size: 10px;
+}
+
+.inline-image{
+    height: 28px;
+    position: relative;
+    top: -5px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.portfolio h3{
+    color: black;
+}
