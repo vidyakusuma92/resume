@@ -21,3 +21,10 @@ $('a').click(function(){
     return false;
 });
 $('body').scrollspy({ target: '#navMain' })
+function sendMessage(data){
+    console.log(data);
+    var formdata = data;
+    var theUrl = "mailto:vidyakusuma92@gmail.com?subject=" + data.subject.value + "&body=" + data.body.value + "%0A" + data.firstname.value + "%0A" + data.email.value;
+    window.location.href=theUrl;
+    return false;
+}

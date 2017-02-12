@@ -90,6 +90,7 @@ a:hover {
   margin: 2em;
   position: inherit;
   bottom: 0;
+  left: 3em;
   right: 0;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
@@ -278,7 +279,7 @@ input[type=textarea]{
   margin-top: 45px;
 }
 .send-button{
-  margin-top: 35px;
+  margin-top: 0px;
   position: relative;
   margin-left: 169px;
   width: 100px;
@@ -288,6 +289,9 @@ input[type=textarea]{
   color: black;
   top: 20px;
   font-size: 20px;
+  border: 0px solid black;
+  border-radius: 0px;
+  outline: none;
 }
 .quickid{
   color: white;
