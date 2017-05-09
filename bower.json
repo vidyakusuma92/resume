@@ -17,6 +17,8 @@
   ],
   "dependencies": {
     "parallax.js": "^1.4.2",
-    "typed.js": "^1.1.4"
+    "typed.js": "^1.1.4",
+    "angular-animate": "^1.6.4",
+    "font-awesome": "^4.7.0"
   }
 }

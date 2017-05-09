@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./public/stylesheets/slider.css">
+  </head>
+  <body ng-app="sliding-game">
+    <div class="container game" ng-controller="indexCtrl" ng-init="init(13)">
+      <div class="row">
+        <div class="col-lg-12">
+          <input type="text" name="grid" ng-model="cross">
+          <button type="button" name="button" ng-click="init(cross)"></button>
+          <div class="row">
+            <div ng-class="cross > 5 ? 'col-lg-1' : 'col-lg-3'">
+            </div>
+            <div class="game-border" ng-class="cross > 5 ? 'col-lg-10' : 'col-lg-6'">
+              <div class="row" ng-repeat="nodeTri in nodes">
+                <div class="col-lg-{{getColLen()}}" ng-show="node.value > 0" ng-repeat="node in nodeTri track by $index">
+                  <button class="btn btn-lg btn-block blck" type="button" name="{{node.value}}" ng-click="moveBlock(node)">{{node.dt}}</button>
+                </div>
+              </div>
+            </div>
+            <div ng-class="cross > 5 ? 'col-lg-1' : 'col-lg-3'">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script type="text/javascript" src="./bower_components/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script type="text/javascript" src="./bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="./bower_components/angular-animate/angular-animate.js"></script>
+  <script type="text/javascript" src="./public/javascripts/slider/index.js"></script>
+  <script type="text/javascript" src="./public/javascripts/scripts/app.js"></script>
+  </body>
+</html>

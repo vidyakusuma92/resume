@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title springwiz
+    link(rel='stylesheet', href='/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/slider/styles.css')
+  body(ng-app='sliderPuzzle', ng-controller='gameCtrl', ng-init='init()')
+    .container.position
+      .col-lg-offset-4.col-md-offset-4.col-xs-offset-2.slidingpuzzleContainer
+        button.node-block(type='button', name='button', ng-class="nodes[0][0].value == 9 ? 'node-hidden': getSlidingAnimation(nodes[0][0])", ng-click='moveBlock(nodes[0][0])') {{nodes[0][0].value}}
+        button.node-block(type='button', name='button', ng-class="nodes[0][1].value == 9 ? 'node-hidden': getSlidingAnimation(nodes[0][1])", ng-click='moveBlock(nodes[0][1])') {{nodes[0][1].value}}
+        button.node-block(type='button', name='button', ng-class="nodes[0][2].value == 9 ? 'node-hidden': getSlidingAnimation(nodes[0][2])", ng-click='moveBlock(nodes[0][2])') {{nodes[0][2].value}}
+        button.node-block(type='button', name='button', ng-class="nodes[1][0].value == 9 ? 'node-hidden': getSlidingAnimation(nodes[1][0])", ng-click='moveBlock(nodes[1][0])') {{nodes[1][0].value}}
+        button.node-block(type='button', name='button', ng-class="nodes[1][1].value == 9 ? 'node-hidden': getSlidingAnimation(nodes[1][1])", ng-click='moveBlock(nodes[1][1])') {{nodes[1][1].value}}
+        button.node-block(type='button', name='button', ng-class="nodes[1][2].value == 9 ? 'node-hidden': getSlidingAnimation(nodes[1][2])", ng-click='moveBlock(nodes[1][2])') {{nodes[1][2].value}}
+        button.node-block(type='button', name='button', ng-class="nodes[2][0].value == 9 ? 'node-hidden': getSlidingAnimation(nodes[2][0])", ng-click='moveBlock(nodes[2][0])') {{nodes[2][0].value}}
+        button.node-block(type='button', name='button', ng-class="nodes[2][1].value == 9 ? 'node-hidden': getSlidingAnimation(nodes[2][1])", ng-click='moveBlock(nodes[2][1])') {{nodes[2][1].value}}
+        button.node-block(type='button', name='button', ng-class="nodes[2][2].value == 9 ? 'node-hidden': getSlidingAnimation(nodes[2][2])", ng-click='moveBlock(nodes[2][2])') {{nodes[2][2].value}}
+      h2.col-lg-offset-4.col-md-offset-4.col-xs-offset-2.slider Sliding Puzzle
+    script(type='text/javascript', src='/jquery/dist/jquery.js')
+    script(type='text/javascript', src='/bootstrap/dist/js/bootstrap.js')
+    script(type='text/javascript', src='/angular/angular.js')
+    script(type='text/javascript', src='/javascripts/slider/sliderpuzzle.js')
