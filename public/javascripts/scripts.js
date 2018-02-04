@@ -4,7 +4,7 @@ $('.parallax-window-second').parallax({imageSrc: ''});
 $('.parallax-window-third').parallax({imageSrc: '/images/parallax-two.jpg'});
 $(function(){
         $(".element").typed({
-            strings: ["Hi, I'm Vidya", "I love arts and design", "I develop frontend", "Hi, I'm Vidya"],
+            strings: ["Hi, I'm Vidya", "I love anything design", "I create experiences", "Hi, I'm Vidya"],
             typeSpeed: 50,
             cursorChar: "|",
             loop: false,

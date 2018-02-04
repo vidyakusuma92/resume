@@ -232,6 +232,10 @@ a:hover {
   outline: none;
   outline-style: none;
 }
+
+#lastname{
+  width: 13.8em;
+}
 .input-style-subject{
   background-color: tranperant;
   border-bottom: 5px;
@@ -281,7 +285,7 @@ input[type=textarea]{
 .send-button{
   margin-top: 0px;
   position: relative;
-  margin-left: 169px;
+  margin-left: -0.8em;  
   width: 100px;
   height: 29px;
   border-radius: 5px;
@@ -289,7 +293,7 @@ input[type=textarea]{
   color: black;
   top: 20px;
   font-size: 20px;
-  border: 0px solid black;
+  border: 2px solid black;
   border-radius: 0px;
   outline: none;
 }
